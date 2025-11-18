@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cloudflare Script Test: Tracker</title>
+</head>
+<body>
+  <h1>Track Event Test</h1>
+
+  <script src="/js/tracker/track-events.js"></script>
+  <script>
+    window.trackEvent("test", {
+      timestamp: Date.now(),
+      message: "Loaded from public-scripts.pages.dev",
+    });
+  </script>
+</body>
+</html>
